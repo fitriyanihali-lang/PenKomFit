@@ -5,7 +5,7 @@ library(dplyr)
 library(openxlsx)
 
 ui <- fluidPage(
-  theme = shinytheme("cerulean"),
+  theme = shinytheme("superhero"),
   titlePanel("Pengolahan Data Kemampuan dan Nilai Tes Pengukuran Penalaran Kombinatorial"),
   sidebarLayout(
     sidebarPanel(
