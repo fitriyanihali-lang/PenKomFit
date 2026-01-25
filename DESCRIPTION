@@ -1,0 +1,12 @@
+Package: PenKomFit
+Type: Package
+Title: Pengolahan Nilai Tes Penalaran Kombinatorial
+Version: 0.1.1
+Author: Fitri Yani
+Maintainer: Fitri Yani <fitri@example.com>
+Description: Paket ini menyediakan aplikasi Shiny untuk mengolah skor dan kemampuan tes pengukuran penalaran kombinatorial berdasarkan model IRT GPCM.
+Depends: R (>= 4.0.0)
+Imports: shiny, shinythemes, mirt, dplyr, openxlsx
+License: MIT
+Encoding: UTF-8
+LazyData: true
