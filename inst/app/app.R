@@ -6,20 +6,20 @@ library(openxlsx)
 
 ui <- fluidPage(
   theme = shinytheme("cosmo"),
-  titlePanel("Pengolahan Data Kemampuan dan Nilai Tes Pengukuran Penalaran Kombinatorial"),
+  titlePanel("Penskoran Data Kemampuan Tes Pengukuran Penalaran Kombinatorial"),
   sidebarLayout(
     sidebarPanel(
-      fileInput("datafile", "Upload Data Respons Siswa (.csv)", accept = ".csv"),
-      actionButton("proses", "Hitung Theta"),
+      fileInput("datafile", "Upload Data Respons Mahasiswa (.csv)", accept = ".csv"),
+      actionButton("proses", "Hitung Theta_Nilai"),
       downloadButton("download_theta", "⬇️ Download Hasil"),
-      downloadButton("download_rekap", "⬇️ Download Rekap")
+      downloadButton("download_rekap_nilai", "⬇️ Download Rekap")
     ),
     mainPanel(
       h4("Deskripsi Skor 0–100"),
       verbatimTextOutput("deskripsi"),
       h4("Ringkasan Jumlah & Persentase per Kategori"),
       tableOutput("ringkasan"),
-      h4("Hasil Theta & Skor Siswa"),
+      h4("Hasil Theta & Nilai Mahaiswa"),
       tableOutput("theta_table")
     )
   )
