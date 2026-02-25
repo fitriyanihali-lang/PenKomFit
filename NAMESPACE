@@ -1,1 +1,1 @@
-export(PenKomFit::run_app())
+export(run_kombinatorial_app)
