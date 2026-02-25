@@ -1,12 +1,30 @@
 Package: PenKomFit
 Type: Package
-Title: Pengolahan Nilai Tes Penalaran Kombinatorial
-Version: 0.1.1
-Author: Fitri Yani
-Maintainer: Fitri Yani <fitri@example.com>
-Description: Paket ini menyediakan aplikasi Shiny untuk mengolah skor dan kemampuan tes pengukuran penalaran kombinatorial berdasarkan model IRT GPCM.
+Title: Aplikasi Pengolahan Nilai Tes Penalaran Kombinatorial Berbasis IRT GPCM
+Version: 0.2.0
+Authors@R: 
+    person("Fitri", "Yani", 
+           email = "fitri@example.com", 
+           role = c("aut", "cre"))
+Description: 
+    Paket ini menyediakan aplikasi Shiny untuk mengolah skor dan 
+    kemampuan tes pengukuran penalaran kombinatorial berdasarkan 
+    model Item Response Theory (IRT) Generalized Partial Credit Model (GPCM). 
+    Aplikasi menghitung estimasi theta total dan per kelompok indikator 
+    (Level Kombinatorial 1–4 dan Bloom Rev C4–C6), melakukan konversi 
+    skor ke skala 0–100, menyajikan deskripsi statistik, ringkasan kategori, 
+    serta rekap profil berdasarkan kategori Baik dan Sangat Baik. 
+    Termasuk fitur auto-detect separator file CSV dan ekspor hasil 
+    ke Excel multi-sheet.
 Depends: R (>= 4.0.0)
-Imports: shiny, shinythemes, mirt, dplyr, openxlsx
-License: MIT
+Imports: 
+    shiny,
+    shinythemes,
+    mirt,
+    dplyr,
+    openxlsx,
+    stringr
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.3.1
